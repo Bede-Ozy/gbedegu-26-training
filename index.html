@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management for Impact | JCI Nigeria Northern Conference 2026</title>
+  <meta name="description" content="Semi-interactive slide presentation on Project Management for Impact for JCI Nigeria Northern Conference Gbedegu '26.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header>
+    <div class="brand-section">
+      <div class="brand-logos">
+        <img src="JCIN.png" alt="JCI Nigeria Logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="logo-separator"></div>
+        <img src="JCIN Conference logo.jpeg" alt="Gbedegu '26 Logo" class="logo-img" onerror="this.style.display='none'">
+      </div>
+      <span class="brand-title">JCI NIGERIA</span>
+      <span class="brand-tagline">Gbedegu '26</span>
+    </div>
+    
+    <div class="nav-controls">
+      <select id="slideSelect" class="slide-select">
+        <option value="0">1. Cover: Project Management for Impact</option>
+        <option value="1">2. JCI Action Framework 2.0: 6-Step Cycle</option>
+        <option value="2">3. JCI Action Framework 2.0: Scalable Levels</option>
+        <option value="3">4. Core PM Concepts &amp; Iron Triangle</option>
+        <option value="4">5. Phase 1: Initiation (Needs Assessment)</option>
+        <option value="5">6. Phase 2: Planning &amp; Design</option>
+        <option value="6">7. Phase 3: Execution &amp; Team Dynamics</option>
+        <option value="7">8. Phase 4: Monitoring &amp; Evaluation</option>
+        <option value="8">9. Phase 5: Closure &amp; Sustainability</option>
+        <option value="9">10. JCI RISE Initiative</option>
+        <option value="10">11. Impact Model Canvas: Overview</option>
+        <option value="11">12. Impact Model Canvas: Interactive Grid</option>
+        <option value="12">13. Tying RISE &amp; Canvas into Projects</option>
+        <option value="13">14. Live Walkthrough: NEXIM Project</option>
+        <option value="14">15. Empowering JCI ASO Members</option>
+        <option value="15">16. Case Studies of JCI ASO Impact</option>
+        <option value="16">17. Conclusion &amp; Q&amp;A</option>
+      </select>
+      
+      <button id="fullscreenBtn" class="btn btn-icon" title="Toggle Fullscreen (Shortcut: F)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- VIEWPORT FOR 16:9 DECK CONTAINER -->
+  <main class="deck-viewport" id="deckViewport">
+    <div class="deck-container" id="deckContainer">
+
+      <!-- ==========================================
+           SLIDE 1: COVER SLIDE
+           ========================================== -->
+      <section class="slide active slide-cover" id="slide-0">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+        </div>
+
+        <!-- Top Right Logo -->
+        <img src="JCIN Conference logo.jpeg" alt="Gbedegu '26 Logo" class="cover-top-logo-right" onerror="this.style.display='none'">
+
+        <div class="cover-container">
+          <div class="cover-left">
+            <img src="JCIN.png" alt="JCI Nigeria Logo" class="cover-logo-left" onerror="this.style.display='none'">
+            <span class="cover-badge">JCI ASO Training Session</span>
+            <h1 class="cover-title">PROJECT MANAGEMENT FOR <span>IMPACT</span></h1>
+            <p class="cover-description">
+              Equipping young active citizens with modern project management methodologies, structures, and tools to execute sustainable social change in the society.
+            </p>
+            <div class="cover-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>Junior Chamber International ASO (JCI ASO)</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Date: 21st August 2026</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Venue: JCI Nigeria Northern Conference, Kaduna</span>
+              </div>
+            </div>
+          </div>
+          <div class="cover-right">
+            <!-- Full Speaker Image & Overlay Card -->
+            <img src="Mr Shamsudeen Aderoju.png" alt="Amb. Shamsudeen Aderoju" class="cover-speaker-img-full" onerror="this.style.display='none'">
+            <div class="cover-speaker-overlay-banner">
+              <h3 class="cover-speaker-name">Amb. Shamsudeen Aderoju</h3>
+              <p class="cover-speaker-title">CEO, Shamzbridge Consult Ltd.</p>
+              <span class="cover-speaker-badge">Keynote Facilitator</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 2: JCI ACTION FRAMEWORK 2.0 (THE 6-STEP CYCLE)
+           ========================================== -->
+      <section class="slide" id="slide-1">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">JCI Action Framework 2.0: The 6-Step Cycle</h1>
+        <p class="body-text" style="margin-bottom: 1rem;">
+          Modernized to guide JCI organizations from ideas to measurable impact. The framework is a continuous learning cycle rather than a rigid linear process.
+        </p>
+        
+        <div class="framework-container">
+          <div class="framework-diagram">
+            <div class="framework-step active" data-target="fw-validate">
+              <span class="step-num">1</span>
+              <span class="step-title">Validate Idea</span>
+            </div>
+            <div class="framework-step" data-target="fw-analyze">
+              <span class="step-num">2</span>
+              <span class="step-title">Analyze Problem</span>
+            </div>
+            <div class="framework-step" data-target="fw-design">
+              <span class="step-num">3</span>
+              <span class="step-title">Design Solution</span>
+            </div>
+            <div class="framework-step" data-target="fw-engage">
+              <span class="step-num">4</span>
+              <span class="step-title">Engage Stakeholders</span>
+            </div>
+            <div class="framework-step" data-target="fw-execute">
+              <span class="step-num">5</span>
+              <span class="step-title">Execute &amp; Monitor</span>
+            </div>
+            <div class="framework-step" data-target="fw-evaluate">
+              <span class="step-num">6</span>
+              <span class="step-title">Evaluate &amp; Close</span>
+            </div>
+          </div>
+          
+          <div class="framework-details-panel">
+            <!-- STEP 1: VALIDATE -->
+            <div class="framework-details-content active" id="fw-validate">
+              <div class="framework-detail-header">
+                <span class="framework-detail-badge">Step 1</span>
+                <h3 class="framework-detail-title">Validate Idea</h3>
+              </div>
+              <p class="body-text" style="font-size: 0.95rem; margin-bottom: 1rem;">
+                <b>Core Question:</b> Is this project worth doing? Explore ideas and verify alignment with JCI priorities, community needs, and local capacity.
+              </p>
+              <div class="framework-bullets">
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Strategic Alignment:</b> Check if the project idea fits JCI's mission and RISE pillars.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Capacity Assessment:</b> Check if the local chapter has the necessary volunteer energy and basic bandwidth.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Key Output:</b> A clear project concept document and formal board decision to proceed.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2: ANALYZE -->
+            <div class="framework-details-content" id="fw-analyze">
+              <div class="framework-detail-header">
+                <span class="framework-detail-badge">Step 2</span>
+                <h3 class="framework-detail-title">Analyze Problem</h3>
+              </div>
+              <p class="body-text" style="font-size: 0.95rem; margin-bottom: 1rem;">
+                <b>Core Question:</b> Do we truly understand the problem? Confirm needs with evidence, analyzing causes, stakeholder groups, and operational risks.
+              </p>
+              <div class="framework-bullets">
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Evidence-based Needs:</b> Use focus groups and local data instead of assumptions.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Root Cause Analysis:</b> Drill down to identify why problems occur using tools like the "5 Whys".</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Key Output:</b> A documented evidence-based assessment of the local problem.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 3: DESIGN -->
+            <div class="framework-details-content" id="fw-design">
+              <div class="framework-detail-header">
+                <span class="framework-detail-badge">Step 3</span>
+                <h3 class="framework-detail-title">Design Solution</h3>
+              </div>
+              <p class="body-text" style="font-size: 0.95rem; margin-bottom: 1rem;">
+                <b>Core Question:</b> What exactly will we do? Translate analysis into clear objectives, outcomes, indicators, timelines, and resource budgets.
+              </p>
+              <div class="framework-bullets">
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Logical Framework:</b> Differentiate immediate outputs from long-term community outcomes.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Work Breakdown (WBS):</b> Establish specific timelines and itemized resource allocations.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Key Output:</b> A complete, approved project design and operational roadmap.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 4: ENGAGE -->
+            <div class="framework-details-content" id="fw-engage">
+              <div class="framework-detail-header">
+                <span class="framework-detail-badge">Step 4</span>
+                <h3 class="framework-detail-title">Engage Stakeholders</h3>
+              </div>
+              <p class="body-text" style="font-size: 0.95rem; margin-bottom: 1rem;">
+                <b>Core Question:</b> Who must support and authorize the project? Secure internal approvals, corporate sponsorships, and finalize partner roles.
+              </p>
+              <div class="framework-bullets">
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Partnership Agreements:</b> Sign MOU agreements with corporate partners and public entities.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Resource Confirmation:</b> Confirm funding, materials, and volunteer team rosters before starting.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Key Output:</b> Fully authorized project charter and confirmed resources/sponsorships.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 5: EXECUTE -->
+            <div class="framework-details-content" id="fw-execute">
+              <div class="framework-detail-header">
+                <span class="framework-detail-badge">Step 5</span>
+                <h3 class="framework-detail-title">Execute &amp; Monitor</h3>
+              </div>
+              <p class="body-text" style="font-size: 0.95rem; margin-bottom: 1rem;">
+                <b>Core Question:</b> Are we delivering the project effectively? Implement planned activities, monitor milestones, and make adjustments.
+              </p>
+              <div class="framework-bullets">
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Adaptive Management:</b> Track operations weekly to handle problems like fuel or weather issues.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Data Collection:</b> Register beneficiaries and compile operational metrics (hours, resources used).</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Key Output:</b> On-schedule project delivery and collected monitoring data.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 6: EVALUATE -->
+            <div class="framework-details-content" id="fw-evaluate">
+              <div class="framework-detail-header">
+                <span class="framework-detail-badge">Step 6</span>
+                <h3 class="framework-detail-title">Evaluate &amp; Close</h3>
+              </div>
+              <p class="body-text" style="font-size: 0.95rem; margin-bottom: 1rem;">
+                <b>Core Question:</b> What did we achieve and learn? Measure impact results, document lessons learned, audit finance, and close the project.
+              </p>
+              <div class="framework-bullets">
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Impact Assessment:</b> Run satisfaction forms and check outcomes 3-6 months later.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Closure Auditing:</b> Balance budgets, pay vendors, and archive reports for future chapters.</span>
+                </div>
+                <div class="framework-bullet-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Key Output:</b> Final evaluation report, lessons log, and administrative sign-off.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 3: JCI ACTION FRAMEWORK 2.0 (PROJECT LEVELS)
+           ========================================== -->
+      <section class="slide" id="slide-2">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">JCI Action Framework 2.0: Scalable Project Levels</h1>
+        <p class="body-text" style="margin-bottom: 1.5rem;">
+          To keep the framework practical, projects are divided into three levels based on scale. Choose the level that matches your project complexity to avoid unnecessary administrative burden.
+        </p>
+
+        <div class="levels-grid">
+          <!-- LEVEL 1 -->
+          <div class="level-card level-1">
+            <span class="level-badge">Level 1</span>
+            <h3 class="level-title">Light Project</h3>
+            <p class="level-quote">"Start simple. Learn by doing."</p>
+            
+            <div class="level-char">
+              <h4 class="level-char-title">Characteristics</h4>
+              <div class="level-list">
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Local scope &amp; short duration (days to weeks)</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Limited or no budget; volunteer-driven</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Few or no external partners</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="level-focus">
+              <h4 class="level-focus-title">Focus &amp; Examples</h4>
+              <div class="level-list">
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Focus:</b> Practical delivery, identify community needs, reflect on results.</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Examples:</b> Skills workshops, awareness events, pilot campaigns.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 2 -->
+          <div class="level-card level-2">
+            <span class="level-badge">Level 2</span>
+            <h3 class="level-title">Standard Project</h3>
+            <p class="level-quote">"Plan better. Deliver stronger impact."</p>
+            
+            <div class="level-char">
+              <h4 class="level-char-title">Characteristics</h4>
+              <div class="level-list">
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>LO or NO scope; medium duration (3-12 months)</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Defined budget; multiple partners &amp; stakeholders</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Strategic alignment with local priorities</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="level-focus">
+              <h4 class="level-focus-title">Focus &amp; Examples</h4>
+              <div class="level-list">
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Focus:</b> Project proposal, objectives, clear roles, output/outcome tracking.</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Examples:</b> Flagship LO projects, structured community bootcamps.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL 3 -->
+          <div class="level-card level-3">
+            <span class="level-badge">Level 3</span>
+            <h3 class="level-title">Advanced Project</h3>
+            <p class="level-quote">"Fundable. Accountable. Scalable."</p>
+            
+            <div class="level-char">
+              <h4 class="level-char-title">Characteristics</h4>
+              <div class="level-list">
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>LO, NO, or international scope; long duration (6-36 months)</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>External grant funding (Foundations, corporate CSR)</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Formal contracts; higher financial &amp; reputational risk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="level-focus">
+              <h4 class="level-focus-title">Focus &amp; Examples</h4>
+              <div class="level-list">
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Focus:</b> Full framework application, formal governance, auditing, donor reporting.</span>
+                </div>
+                <div class="level-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><b>Examples:</b> Multi-country NGO initiatives, EU-funded youth structures.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 4: CORE PM CONCEPTS & IRON TRIANGLE
+           ========================================== -->
+      <section class="slide" id="slide-3">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Core Project Management Concepts</h1>
+        
+        <div class="concepts-layout">
+          <div class="triangle-container">
+            <h3 class="section-header" id="triangleInfoTitle" style="font-size: 1.1rem;">Click Triangle Nodes to Explore</h3>
+            <svg class="iron-triangle-svg" viewBox="0 0 300 300">
+              <!-- Lines -->
+              <line id="line-scope-time" class="triangle-line" x1="150" y1="50" x2="50" y2="220" />
+              <line id="line-scope-cost" class="triangle-line" x1="150" y1="50" x2="250" y2="220" />
+              <line id="line-time-cost" class="triangle-line" x1="50" y1="220" x2="250" y2="220" />
+              
+              <!-- Nodes -->
+              <g class="triangle-node active" data-concept="scope" transform="translate(150,50)">
+                <circle r="10" />
+                <text class="triangle-text" y="-20" text-anchor="middle">SCOPE</text>
+              </g>
+              <g class="triangle-node" data-concept="time" transform="translate(50,220)">
+                <circle r="10" />
+                <text class="triangle-text" x="-15" y="25" text-anchor="middle">TIME</text>
+              </g>
+              <g class="triangle-node" data-concept="cost" transform="translate(250,220)">
+                <circle r="10" />
+                <text class="triangle-text" x="15" y="25" text-anchor="middle">COST</text>
+              </g>
+              
+              <text class="triangle-center-text" x="150" y="170">QUALITY</text>
+            </svg>
+            <div class="triangle-info-box">
+              Changing any side of the triangle compromises quality.
+            </div>
+          </div>
+          
+          <div class="concept-tabs">
+            <div class="concept-tab-card active" data-concept="scope">
+              <div class="concept-tab-header">
+                <span class="concept-tab-title">Scope: The What &amp; How Much</span>
+                <span class="concept-tab-badge tab-badge-navy">Boundary</span>
+              </div>
+              <p class="concept-tab-desc">
+                Scope defines all the work required to complete the project successfully. It is your project's boundary. 
+                <br><br>
+                <b>Scope Creep:</b> Adding uncontrolled tasks without expanding budget or time. Stop scope creep early to protect your team from burnout.
+              </p>
+            </div>
+            
+            <div class="concept-tab-card" data-concept="time">
+              <div class="concept-tab-header">
+                <span class="concept-tab-title">Time: The Timeline &amp; Schedule</span>
+                <span class="concept-tab-badge tab-badge-blue">Deadline</span>
+              </div>
+              <p class="concept-tab-desc">
+                Projects have a strict start and end. Time management involves planning calendar milestones, tasks duration, and resource scheduling.
+                <br><br>
+                Use simple timelines (like Gantt charts) to track milestones and avoid conference day crunches.
+              </p>
+            </div>
+            
+            <div class="concept-tab-card" data-concept="cost">
+              <div class="concept-tab-header">
+                <span class="concept-tab-title">Cost: The Budget &amp; Funds</span>
+                <span class="concept-tab-badge tab-badge-accent">Finance</span>
+              </div>
+              <p class="concept-tab-desc">
+                Cost encompasses financial budgets, materials, and volunteer assets. 
+                <br><br>
+                Always draft itemized budgets. Map costs to sponsorships (cash or in-kind donations) and run audits to build credibility in JCI Nigeria.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 5: PHASE 1: INITIATION
+           ========================================== -->
+      <section class="slide" id="slide-4">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Phase 1: Project Initiation</h1>
+        
+        <div class="initiation-layout">
+          <div class="checklist-box">
+            <div class="checklist-item">
+              <div class="checklist-bullet">1</div>
+              <div class="checklist-text">
+                <h4>Community Needs Assessment</h4>
+                <p>Never guess a community's needs. Use surveys, focus groups, and interviews to find the root issues affecting the community.</p>
+              </div>
+            </div>
+            <div class="checklist-item">
+              <div class="checklist-bullet">2</div>
+              <div class="checklist-text">
+                <h4>Define the Project Charter</h4>
+                <p>Draft a brief project brief specifying the "Why", "What", expected outcomes, core project director, and team members.</p>
+              </div>
+            </div>
+            <div class="checklist-item">
+              <div class="checklist-bullet">3</div>
+              <div class="checklist-text">
+                <h4>Stakeholder Analysis</h4>
+                <p>Identify local leaders, government agencies, corporate sponsors, and volunteers whose support or feedback is required.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sdg-selector">
+            <h3 class="section-header" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Aligning with Global SDGs</h3>
+            <p class="body-text" style="font-size: 0.9rem; margin-bottom: 1rem;">Click an SDG card below to see how JCI Nigeria alignments look:</p>
+            
+            <div class="sdg-grid">
+              <button class="sdg-icon-btn sdg-1 active" data-sdg="1">
+                <img src="images/Sustainable_Development_Goal_01NoPoverty.svg.webp" alt="SDG 1">
+              </button>
+              <button class="sdg-icon-btn sdg-2" data-sdg="2">
+                <img src="images/SDG2-zero-hunger-progress-FINAL.webp" alt="SDG 2">
+              </button>
+              <button class="sdg-icon-btn sdg-3" data-sdg="3">
+                <img src="images/sdg3.png" alt="SDG 3">
+              </button>
+              <button class="sdg-icon-btn sdg-4" data-sdg="4">
+                <img src="images/sdg4.png" alt="SDG 4">
+              </button>
+              <button class="sdg-icon-btn sdg-5" data-sdg="5">
+                <img src="images/sdg5.png" alt="SDG 5">
+              </button>
+              <button class="sdg-icon-btn sdg-6" data-sdg="6">
+                <img src="images/sdg6.png" alt="SDG 6">
+              </button>
+              <button class="sdg-icon-btn sdg-8" data-sdg="8">
+                <img src="images/sdg8.png" alt="SDG 8">
+              </button>
+              <button class="sdg-icon-btn sdg-13" data-sdg="13">
+                <img src="images/sdg13.png" alt="SDG 13">
+              </button>
+            </div>
+            
+            <div class="sdg-details">
+              <h4 class="sdg-details-title" id="sdgDetailsTitle">SDG 1: No Poverty</h4>
+              <p class="sdg-details-desc" id="sdgDetailsDesc">Projects targeting financial literacy, micro-enterprise training for local youths, and skills acquiring schemes. In JCIN, this resolves through local entrepreneurship summits.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 6: PHASE 2: PLANNING & DESIGN
+           ========================================== -->
+      <section class="slide" id="slide-5">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Phase 2: Planning &amp; Design</h1>
+        
+        <div class="planning-layout">
+          <div class="gantt-widget">
+            <h3 class="section-header" style="font-size: 1.1rem; margin-bottom: 0;">Project Roadmap (Gantt Schedule)</h3>
+            <p style="font-size: 0.8rem; color: var(--color-text-muted);">Click on a bar below to view phase details:</p>
+            
+            <div class="gantt-chart">
+              <div class="gantt-row">
+                <span class="gantt-label">Initiation</span>
+                <div class="gantt-timeline-track">
+                  <div class="gantt-bar gantt-w1-2" data-phase="initiation">Weeks 1 - 2</div>
+                </div>
+              </div>
+              <div class="gantt-row">
+                <span class="gantt-label">Planning &amp; PR</span>
+                <div class="gantt-timeline-track">
+                  <div class="gantt-bar gantt-w2-4" data-phase="planning">Weeks 2 - 4</div>
+                </div>
+              </div>
+              <div class="gantt-row">
+                <span class="gantt-label">Execution</span>
+                <div class="gantt-timeline-track">
+                  <div class="gantt-bar gantt-w4-6" data-phase="execution">Weeks 4 - 6</div>
+                </div>
+              </div>
+              <div class="gantt-row">
+                <span class="gantt-label">M&amp;E &amp; Closure</span>
+                <div class="gantt-timeline-track">
+                  <div class="gantt-bar gantt-w5-8" data-phase="closure">Weeks 5 - 8</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gantt-info-panel">
+              <h4 class="gantt-info-title" id="ganttInfoTitle">Weeks 1 - 2: Project Initiation</h4>
+              <p class="gantt-info-desc" id="ganttInfoDesc">Perform needs assessments, stakeholder interviews, align with JCI Action Framework, draft project charter, and secure board approvals.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center;">
+            <div class="card">
+              <h4 class="card-title">Work Breakdown Structure (WBS)</h4>
+              <p class="body-text" style="font-size: 0.9rem; margin-bottom: 0;">
+                Deconstruct the project into small, bite-sized tasks. Distribute tasks to committee members using clear checklists to prevent gaps.
+              </p>
+            </div>
+            <div class="card accent">
+              <h4 class="card-title">Risk Management Checklist</h4>
+              <p class="body-text" style="font-size: 0.9rem; margin-bottom: 0;">
+                Identify threats early (e.g., fuel scarcity, venue problems, rain). Formulate backup plans so the project continues smoothly no matter the conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 7: PHASE 3: EXECUTION & TEAM DYNAMICS
+           ========================================== -->
+      <section class="slide" id="slide-6">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Phase 3: Execution &amp; Team Dynamics</h1>
+        
+        <div class="execution-layout">
+          <div class="org-chart-box">
+            <h3 class="section-header" style="font-size: 1.1rem; margin-bottom: 0;">Interactive Project Team</h3>
+            
+            <!-- Director Node -->
+            <div class="org-node director active" data-id="director">
+              <div class="org-node-title">Project Director</div>
+              <div class="org-node-subtitle">Overall Lead</div>
+            </div>
+            <div class="org-line"></div>
+            
+            <!-- Sub Roles Row -->
+            <div class="org-row-flex">
+              <div class="org-node" data-id="planner">
+                <div class="org-node-title">Secretary</div>
+                <div class="org-node-subtitle">Admin &amp; Records</div>
+              </div>
+              <div class="org-node" data-id="treasurer">
+                <div class="org-node-title">Treasurer / Logistics</div>
+                <div class="org-node-subtitle">Finance &amp; Venue</div>
+              </div>
+              <div class="org-node" data-id="relations">
+                <div class="org-node-title">PR &amp; Volunteers</div>
+                <div class="org-node-subtitle">Media &amp; Recruitment</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="org-details-card">
+            <h3 class="org-details-name" id="orgDetailsName">Project Director</h3>
+            <span class="org-details-role" id="orgDetailsRole">Strategic Leader</span>
+            <div class="org-details-list" id="orgDetailsList">
+              <div class="framework-bullet-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Liaises with JCI Local Organization President and Board.</span>
+              </div>
+              <div class="framework-bullet-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Overlooks all project deliverables, milestones, and safety guidelines.</span>
+              </div>
+              <div class="framework-bullet-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Coordinates key stakeholder and partner relations.</span>
+              </div>
+              <div class="framework-bullet-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Drives the project's vision and core goals.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 8: PHASE 4: MONITORING & EVALUATION
+           ========================================== -->
+      <section class="slide" id="slide-7">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Phase 4: Monitoring &amp; Evaluation</h1>
+        
+        <div class="m-e-layout">
+          <div class="m-e-cards">
+            <div class="m-e-card">
+              <span class="m-e-badge badge-output">Outputs</span>
+              <div class="m-e-content">
+                <h4>Quantitative Actions</h4>
+                <p>The immediate, tangible results of your activities. Easy to count but doesn't show long-term change.</p>
+                <p style="font-size: 0.8rem; font-weight: bold; margin-top: 4px; color: var(--color-primary);">
+                  Examples: 50 laptops distributed, 100 students registered, 5 classes run.
+                </p>
+              </div>
+            </div>
+            
+            <div class="m-e-card">
+              <span class="m-e-badge badge-outcome">Outcomes</span>
+              <div class="m-e-content">
+                <h4>Qualitative Changes</h4>
+                <p>The actual impact or behavioral shifts in the community. Requires long-term tracking.</p>
+                <p style="font-size: 0.8rem; font-weight: bold; margin-top: 4px; color: var(--color-accent);">
+                  Examples: 65% of students secured tech jobs, local coding projects created.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="calculator-widget">
+            <h3 class="calc-title">JCI Project Impact Estimator</h3>
+            
+            <div class="calc-row">
+              <div class="calc-row-header">
+                <span>Active JCI Volunteers</span>
+                <span id="volunteersValue">25</span>
+              </div>
+              <input type="range" id="volunteersSlider" class="calc-slider" min="5" max="200" value="25">
+            </div>
+            
+            <div class="calc-row">
+              <div class="calc-row-header">
+                <span>Target Community Reach</span>
+                <span id="targetReachValue">150</span>
+              </div>
+              <input type="range" id="targetReachSlider" class="calc-slider" min="50" max="5000" value="150" step="50">
+            </div>
+            
+            <div class="calc-row">
+              <div class="calc-row-header">
+                <span>Resource/Budget Efficiency</span>
+                <span id="efficiencyValue">Medium</span>
+              </div>
+              <input type="range" id="efficiencySlider" class="calc-slider" min="1" max="3" value="2" step="1">
+            </div>
+            
+            <div class="calc-result-box">
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-text-muted); font-weight: 700;">Project Impact Score</div>
+              <div class="calc-score" id="calcScore">0</div>
+              <div class="calc-rating" id="calcRating">Local Community Impact</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 9: PHASE 5: CLOSURE & SUSTAINABILITY
+           ========================================== -->
+      <section class="slide" id="slide-8">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Phase 5: Closure &amp; Sustainability</h1>
+        
+        <div class="closure-grid">
+          <div class="card closure-card">
+            <div class="closure-card-icon">📂</div>
+            <h4 class="closure-card-title">Administrative Closure</h4>
+            <p class="closure-card-text">
+              Ensure all JCI accounts balance, return borrowed venues, clear expenses, and compile documentation reports.
+            </p>
+            <div class="closure-list">
+              <div class="closure-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Financial Auditing done</span>
+              </div>
+              <div class="closure-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Vendor payments completed</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card closure-card accent">
+            <div class="closure-card-icon">🧠</div>
+            <h4 class="closure-card-title">Knowledge Handover</h4>
+            <p class="closure-card-text">
+              Save key contacts, volunteer lists, design graphics, and write a "lessons learned" review for future board directors.
+            </p>
+            <div class="closure-list">
+              <div class="closure-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Lessons log archived</span>
+              </div>
+              <div class="closure-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Shared drive folders structured</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card closure-card">
+            <div class="closure-card-icon">🌱</div>
+            <h4 class="closure-card-title">Long-term Sustainability</h4>
+            <p class="closure-card-text">
+              Hand over physical facilities to local community committees or formulate a self-sustaining funding system.
+            </p>
+            <div class="closure-list">
+              <div class="closure-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Asset custodians appointed</span>
+              </div>
+              <div class="closure-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Partnership contracts signed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 10: JCI RISE INITIATIVE
+           ========================================== -->
+      <section class="slide" id="slide-9">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">The JCI RISE Initiative</h1>
+        <p class="body-text" style="margin-bottom: 1.5rem;">
+          JCI's response to COVID-19 recovery and future planning. Local organization projects are encouraged to align with the four pillars of R.I.S.E.
+        </p>
+        
+        <div class="rise-layout">
+          <!-- REBUILD -->
+          <div class="rise-card rise-r">
+            <div class="rise-letter">R</div>
+            <div class="rise-badge">R</div>
+            <h4 class="rise-card-title">Rebuild</h4>
+            <p class="rise-card-desc">
+              Rebuilding economies by supporting small local businesses, micro-enterprises, and promoting local entrepreneurship summits.
+            </p>
+            <div class="rise-pm-link">PM focus: Risk assessment and partnership creation.</div>
+          </div>
+          
+          <!-- INVEST -->
+          <div class="rise-card rise-i">
+            <div class="rise-letter">I</div>
+            <div class="rise-badge">I</div>
+            <h4 class="rise-card-title">Invest</h4>
+            <p class="rise-card-desc">
+              Investing in youth training, digital literacy, and leadership bootcamps. Empowering active citizens to get jobs.
+            </p>
+            <div class="rise-pm-link">PM focus: WBS and curriculum milestones.</div>
+          </div>
+          
+          <!-- SUSTAIN -->
+          <div class="rise-card rise-s">
+            <div class="rise-letter">S</div>
+            <div class="rise-badge">S</div>
+            <h4 class="rise-card-title">Sustain</h4>
+            <p class="rise-card-desc">
+              Sustaining local health campaigns, clean water boreholes, and infrastructural support to vulnerable communities.
+            </p>
+            <div class="rise-pm-link">PM focus: Action Framework and Handover audits.</div>
+          </div>
+          
+          <!-- EVOLVE -->
+          <div class="rise-card rise-e">
+            <div class="rise-letter">E</div>
+            <div class="rise-badge">E</div>
+            <h4 class="rise-card-title">Evolve</h4>
+            <p class="rise-card-desc">
+              Evolving operations by introducing technology, online training, and paperless administrative systems in JCI local chapters.
+            </p>
+            <div class="rise-pm-link">PM focus: Scope management and process changes.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 11: IMPACT MODEL CANVAS OVERVIEW
+           ========================================== -->
+      <section class="slide" id="slide-10">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Impact Model Canvas: Overview</h1>
+        
+        <div class="canvas-intro-layout">
+          <div class="canvas-mockup">
+            <div class="mockup-block mb-p">Problem &amp; Needs</div>
+            <div class="mockup-block mb-ka">Core Activities</div>
+            <div class="mockup-block mb-vp">Value Proposition</div>
+            <div class="mockup-block mb-ch">Channels</div>
+            <div class="mockup-block mb-si">Social Impact</div>
+            <div class="mockup-block mb-kr">Key Resources</div>
+            <div class="mockup-block mb-b">Beneficiaries</div>
+            <div class="mockup-block mb-co">Cost Structure</div>
+            <div class="mockup-block mb-rs">Sustainability Model</div>
+          </div>
+          
+          <div class="canvas-intro-bullets">
+            <h2 class="slide-subtitle" style="margin-bottom: 0.5rem; font-size: 1.5rem;">Why use the Canvas?</h2>
+            
+            <div class="canvas-intro-item">
+              <div class="canvas-intro-number">1</div>
+              <div class="canvas-intro-text">
+                <h4>Social Mission Centered</h4>
+                <p>Unlike traditional business canvases, the Impact Model Canvas positions the community's problems and long-term social impact as the foundation.</p>
+              </div>
+            </div>
+            
+            <div class="canvas-intro-item">
+              <div class="canvas-intro-number">2</div>
+              <div class="canvas-intro-text">
+                <h4>Holistic Planning on One Page</h4>
+                <p>Forces the JCI planning committee to map out activities, resources, stakeholders, and funding streams side-by-side to verify alignment.</p>
+              </div>
+            </div>
+            
+            <div class="canvas-intro-item">
+              <div class="canvas-intro-number">3</div>
+              <div class="canvas-intro-text">
+                <h4>Prepares You for Sponsor Pitches</h4>
+                <p>Fills in the exact gaps corporate CSR sponsors ask about: Who benefits? What do you spend? How do you measure success?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 12: IMPACT MODEL CANVAS INTERACTIVE GRID
+           ========================================== -->
+      <section class="slide" id="slide-11">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">The Impact Model Canvas</h1>
+        
+        <div class="canvas-interactive-wrapper">
+          <div class="canvas-grid">
+            <!-- Problem -->
+            <div class="canvas-block cb-problem active" data-block="problem">
+              <span class="canvas-block-num">01</span>
+              <span class="canvas-block-title">Problem &amp; Local Needs</span>
+              <span class="canvas-block-icon">❓</span>
+            </div>
+            
+            <!-- Activities -->
+            <div class="canvas-block cb-activities" data-block="activities">
+              <span class="canvas-block-num">02</span>
+              <span class="canvas-block-title">Core Activities</span>
+              <span class="canvas-block-icon">⚡</span>
+            </div>
+            
+            <!-- Value Proposition -->
+            <div class="canvas-block cb-value" data-block="value">
+              <span class="canvas-block-num">03</span>
+              <span class="canvas-block-title">Value Proposition</span>
+              <span class="canvas-block-icon">💎</span>
+            </div>
+            
+            <!-- Channels -->
+            <div class="canvas-block cb-channels" data-block="channels">
+              <span class="canvas-block-num">04</span>
+              <span class="canvas-block-title">Channels</span>
+              <span class="canvas-block-icon">📣</span>
+            </div>
+            
+            <!-- Social Impact -->
+            <div class="canvas-block cb-impact" data-block="impact">
+              <span class="canvas-block-num">05</span>
+              <span class="canvas-block-title">Social Impact</span>
+              <span class="canvas-block-icon">🎯</span>
+            </div>
+            
+            <!-- Resources -->
+            <div class="canvas-block cb-resources" data-block="resources">
+              <span class="canvas-block-num">06</span>
+              <span class="canvas-block-title">Key Resources</span>
+              <span class="canvas-block-icon">🛠️</span>
+            </div>
+            
+            <!-- Beneficiaries -->
+            <div class="canvas-block cb-beneficiaries" data-block="beneficiaries">
+              <span class="canvas-block-num">07</span>
+              <span class="canvas-block-title">Beneficiaries</span>
+              <span class="canvas-block-icon">👥</span>
+            </div>
+            
+            <!-- Costs -->
+            <div class="canvas-block cb-costs" data-block="costs">
+              <span class="canvas-block-num">08</span>
+              <span class="canvas-block-title">Cost Structure</span>
+              <span class="canvas-block-icon">💳</span>
+            </div>
+            
+            <!-- Revenue -->
+            <div class="canvas-block cb-revenue" data-block="revenue">
+              <span class="canvas-block-num">09</span>
+              <span class="canvas-block-title">Sustainability &amp; Reinvestment</span>
+              <span class="canvas-block-icon">💰</span>
+            </div>
+          </div>
+          
+          <div class="canvas-interactive-detail">
+            <h4 class="canvas-detail-title" id="canvasDetailTitle">1. Problem &amp; Local Needs</h4>
+            <p class="canvas-detail-desc" id="canvasDetailDesc">
+              Specify the community issues you are tackling (e.g., poor sanitation, youth unemployment in Northern Nigeria). <b>JCIN Example:</b> High youth unemployment due to lack of standard tech skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 13: TYING RISE & CANVAS INTO PROJECTS
+           ========================================== -->
+      <section class="slide" id="slide-12">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Tying JCI RISE &amp; Impact Canvas Into Projects</h1>
+        <p class="body-text" style="margin-bottom: 0.5rem;">
+          How does strategy tie into execution? RISE defines our thematic targets, the Impact Model Canvas designs our project logic, and the Action Framework manages our project delivery.
+        </p>
+
+        <div class="integration-layout">
+          <!-- CARD 1: RISE (WHY) -->
+          <div class="integration-flow-card">
+            <span class="flow-badge rise">1. RISE: Strategic Focus</span>
+            <h4>Define The Goal (Why)</h4>
+            <div class="integration-bullets">
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Select a RISE pillar: <b>Rebuild, Invest, Sustain, Evolve</b>.</span>
+              </div>
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Determine what economic or social recovery target you are addressing.</span>
+              </div>
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Establish alignment with specific global SDGs.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: CANVAS (HOW) -->
+          <div class="integration-flow-card">
+            <span class="flow-badge canvas">2. Canvas: Design Logic</span>
+            <h4>Map The Structure (How)</h4>
+            <div class="integration-bullets">
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Connect <b>Needs</b> directly to a unique <b>Value Proposition</b>.</span>
+              </div>
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Map <b>Key Partners</b> and <b>Resources</b> required for operations.</span>
+              </div>
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Analyze <b>Cost Structures</b> and formulate a <b>Sustainability Model</b>.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: FRAMEWORK 2.0 (WHEN) -->
+          <div class="integration-flow-card">
+            <span class="flow-badge framework">3. Framework 2.0: Cycle</span>
+            <h4>Manage The Delivery (When)</h4>
+            <div class="integration-bullets">
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Validate and analyze before launching.</span>
+              </div>
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Use the Canvas to pitch sponsors during the <b>Engage</b> step.</span>
+              </div>
+              <div class="integration-bullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Deliver activities and measure outcomes in the <b>Execute</b> and <b>Evaluate</b> steps.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 14: LIVE WALKTHROUGH (JCI ASO CASE)
+           ========================================== -->
+      <section class="slide" id="slide-13">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Walkthrough: Application in a Live Project</h1>
+        <p class="body-text" style="margin-bottom: 0.5rem;">
+          How JCI ASO applied RISE and the Impact Model Canvas to implement the <b>NEXIM Bank Women Empowerment Initiative</b> in Abuja.
+        </p>
+
+        <div class="walkthrough-layout">
+          <!-- STEP 1 -->
+          <div class="walkthrough-step-card">
+            <div class="walkthrough-step-header">
+              <div class="walkthrough-step-num">1</div>
+              <span class="walkthrough-step-badge">RISE Strategic Alignment</span>
+            </div>
+            <h4 class="walkthrough-step-title">Step 1: Choose Strategic Target</h4>
+            <p class="walkthrough-step-desc">
+              Focus on economic restoration for female agri-entrepreneurs affected by local market shifts in Abuja.
+            </p>
+            <div class="walkthrough-list">
+              <div class="walkthrough-item">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><b>RISE Pillar:</b> Rebuild (local businesses) &amp; Invest (skills).</span>
+              </div>
+              <div class="walkthrough-item">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><b>SDG Targets:</b> SDG 5 (Gender Equality) &amp; SDG 8 (Decent Work).</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="walkthrough-step-card">
+            <div class="walkthrough-step-header">
+              <div class="walkthrough-step-num">2</div>
+              <span class="walkthrough-step-badge">Canvas Mapping</span>
+            </div>
+            <h4 class="walkthrough-step-title">Step 2: Map the Impact Logic</h4>
+            <p class="walkthrough-step-desc">
+              Formulate structural logistics for the beneficiary using the 9 blocks of the Impact Model Canvas.
+            </p>
+            <div class="walkthrough-list">
+              <div class="walkthrough-item">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><b>Value Prop:</b> Rice-milling machine, ₦5M grant, &amp; scholarship.</span>
+              </div>
+              <div class="walkthrough-item">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><b>Partners:</b> NEXIM Bank &amp; local agricultural associations.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="walkthrough-step-card">
+            <div class="walkthrough-step-header">
+              <div class="walkthrough-step-num">3</div>
+              <span class="walkthrough-step-badge">Execution Cycle</span>
+            </div>
+            <h4 class="walkthrough-step-title">Step 3: Execute via Framework 2.0</h4>
+            <p class="walkthrough-step-desc">
+              Carry the plan through the 6-step project cycle from validation to final evaluation.
+            </p>
+            <div class="walkthrough-list">
+              <div class="walkthrough-item">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><b>Engage &amp; Execute:</b> Secured NEXIM grant and ran operations.</span>
+              </div>
+              <div class="walkthrough-item">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><b>Evaluate:</b> Tracked production output increase of milling operations.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 15: VALUE FOR JCI ASO MEMBERS
+           ========================================== -->
+      <section class="slide" id="slide-14">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Empowering JCI ASO Members</h1>
+        <p class="body-text" style="margin-bottom: 2rem;">
+          How applying the Impact Model Canvas and formal project management frameworks directly improves the leadership capacity, careers, and ventures of JCI ASO members.
+        </p>
+        
+        <div class="member-value-layout">
+          <div class="card value-card">
+            <span class="value-num">01</span>
+            <h4 class="value-title">Career &amp; Professional Growth</h4>
+            <p class="value-text">
+              Mastering the Canvas builds professional skills in strategic planning, operations logistics, and financial systems. These are top skills required in corporate workspaces and startups.
+            </p>
+          </div>
+          
+          <div class="card value-card accent">
+            <span class="value-num">02</span>
+            <h4 class="value-title">Securing Sponsors &amp; Capital</h4>
+            <p class="value-text">
+              Sponsors don't fund vague ideas; they fund structures. Pitching with a completed Impact Canvas proves to corporate partners that your JCI chapter operates with high competence and accountability.
+            </p>
+          </div>
+          
+          <div class="card value-card">
+            <span class="value-num">03</span>
+            <h4 class="value-title">Effective Team Leadership</h4>
+            <p class="value-text">
+              Using transparent frameworks reduces ambiguity. Clear roles, budgets, and milestones prevent volunteer burnout, building a unified, energetic team of young active citizens.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 16: CASE STUDIES OF JCI ASO IMPACT
+           ========================================== -->
+      <section class="slide" id="slide-15">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Case Studies of JCI ASO Impact</h1>
+        
+        <div class="case-studies-layout">
+          <div class="case-selector">
+            <button class="case-btn active" data-target="case-1">
+              <h4 class="case-btn-title">Race to Green</h4>
+              <span class="case-btn-loc">Abuja FCT Outreach</span>
+            </button>
+            
+            <button class="case-btn" data-target="case-2">
+              <h4 class="case-btn-title">Women Empowerment</h4>
+              <span class="case-btn-loc">NEXIM Bank Partnership</span>
+            </button>
+          </div>
+          
+          <div class="case-display">
+            <!-- CASE 1 CONTENT -->
+            <div class="case-content active" id="case-1">
+              <div class="case-header">
+                <div>
+                  <h3 class="case-title">Baba &amp; Yara "Race to Green" Campaign</h3>
+                  <span class="case-location">Abuja FCT (14th Edition)</span>
+                </div>
+                <div class="case-meta">
+                  <span class="case-tag">Environment (SDG 12/13)</span>
+                </div>
+              </div>
+              <div class="case-body">
+                <div class="case-text">
+                  <h5>Local Need &amp; Problem</h5>
+                  <p class="body-text" style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">
+                    Growing plastic waste pollution in public spaces and lack of structured recycling consciousness among city dwellers in Abuja.
+                  </p>
+                  <h5>Project Solution &amp; Actions</h5>
+                  <p class="body-text" style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 0;">
+                    Integrated Worker's Day novelty games with a multi-month plastic waste collection challenge. Partnered with local recycling hubs to route gathered plastics.
+                  </p>
+                </div>
+                <div class="case-stats">
+                  <div class="stat-item">
+                    <span class="stat-num">1,000+</span>
+                    <div class="stat-label">KG Plastics Recycled</div>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-num">100+</span>
+                    <div class="stat-label">Active Youth Volunteers</div>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-num">3</span>
+                    <div class="stat-label">Local Hub Partners</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- CASE 2 CONTENT -->
+            <div class="case-content" id="case-2">
+              <div class="case-header">
+                <div>
+                  <h3 class="case-title">Agri-Business Support Fund</h3>
+                  <span class="case-location">Abuja Rural Communities</span>
+                </div>
+                <div class="case-meta">
+                  <span class="case-tag">Gender (SDG 5/8)</span>
+                </div>
+              </div>
+              <div class="case-body">
+                <div class="case-text">
+                  <h5>Local Need &amp; Problem</h5>
+                  <p class="body-text" style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">
+                    Marginalized female agri-entrepreneurs in FCT rural outskirts lacking modern processing machinery and business expansion capital.
+                  </p>
+                  <h5>Project Solution &amp; Actions</h5>
+                  <p class="body-text" style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 0;">
+                    Partnered with NEXIM Bank to launch a support fund, delivering machinery and financial grants to rural entrepreneurs alongside educational scholarships.
+                  </p>
+                </div>
+                <div class="case-stats">
+                  <div class="stat-item">
+                    <span class="stat-num">₦5.0M</span>
+                    <div class="stat-label">Financial Grant Awarded</div>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-num">1</span>
+                    <div class="stat-label">Rice Milling Machine</div>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-num">1</span>
+                    <div class="stat-label">Child Scholarship</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 17: CONCLUSION & Q&A
+           ========================================== -->
+      <section class="slide" id="slide-16">
+        <!-- Background Shapes -->
+        <div class="slide-bg-shapes">
+          <div class="bg-blob-1"></div>
+          <div class="bg-blob-2"></div>
+          <div class="bg-pattern"></div>
+        </div>
+
+        <h1 class="slide-title">Conclusion &amp; Call to Action</h1>
+        
+        <div class="cta-layout">
+          <div class="cta-left">
+            <h2 class="cta-headline">Let's Lead with <span>Impact</span></h2>
+            <p class="body-text">
+              Project management isn't just administrative paperwork; it's the vehicle that carries JCI's vision to reality. Go back to your Local Organizations and build programs that change lives!
+            </p>
+            
+            <div class="speaker-card">
+              <div class="speaker-avatar">JS</div>
+              <div class="speaker-info">
+                <h5>Amb. Shamsudeen Aderoju</h5>
+                <p>CEO, Shamzbridge Consult Ltd. | JCI ASO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-info">
+      Amb. Shamsudeen Aderoju (CEO, Shamzbridge Consult Ltd.) | JCI ASO
+    </div>
+    
+    <div class="footer-controls">
+      <button id="prevBtn" class="btn" title="Previous Slide (Left Arrow / Backspace)">Prev</button>
+      
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+      
+      <span class="slide-number" id="slideNumDisplay">1 / 17</span>
+      
+      <button id="nextBtn" class="btn" title="Next Slide (Right Arrow / Space)">Next</button>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
